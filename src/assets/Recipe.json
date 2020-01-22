@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "name": "crock Pot Roast",
+      "type": "Vegan",
+      "prepTime": 30,
+      "cookTime": 30,
+      "picture": "",
+      "rate": 5,
+      "ingredients": []
+    },
+    {
+      "id": 2,
+      "name": "roasted Asparagus",
+      "type": "Non-Vegan",
+      "prepTime": 30,
+      "cookTime": 40,
+      "picture": "",
+      "rate": 3,
+      "ingredients": []
+    },
+    {
+      "id": 3,
+      "name": "Curried Lentils and Rice",
+      "type": "Vegan",
+      "prepTime": 30,
+      "cookTime": 30,
+      "picture": "",
+      "rate": 5,
+      "ingredients": []
+    }
+  ]

@@ -1,0 +1,17 @@
+<div class="filterArea" *ngIf="_recipes || _recipes.length">
+  <cook-recipes-filter (changed)="filter($event)"></cook-recipes-filter>
+</div>
+<h1 *ngIf="!filteredRecipes || filteredRecipes.length == 0">No recipes</h1>
+<div *ngIf="filteredRecipes && filteredRecipes.length">
+  <div class="recipieListContainer">
+    <div class="recipe-item" *ngFor="let recipe of filteredRecipes">
+      <div class="rating">
+        <span *ngFor="let r of [1,2,3,4,5]">
+          <i class="fa fa-star" [ngClass]="{'iYellow': recipe.rate >= r, 'iWhite' : recipe.rate < r}"></i>
+        </span>
+      </div>
+      <h5>{{recipe.name | capitalize}}</h5>
+      <hr />
+    </div>
+  </div>
+</div>

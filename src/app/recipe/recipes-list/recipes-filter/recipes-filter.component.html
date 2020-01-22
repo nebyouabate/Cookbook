@@ -1,0 +1,17 @@
+<div class="filterContainer">
+  <div class="sort">
+    <div class="sortBySelect">
+      <span>Sort by</span> <i class="fa fa-lg fa-chevron-down" (click)="showHideList()"></i>
+    </div>
+    <div *ngIf="showSortingList" class="sorting-items">
+      <span [ngClass]="{'selctedFilter': sortingProp === 'rateH'}" (click)="sort('rateH')">Rating, High first</span>
+      <span [ngClass]="{'selctedFilter': sortingProp === 'name'}" (click)="sort('name')">Name</span>
+      <span [ngClass]="{'selctedFilter': sortingProp === 'type'}" (click)="sort('type')">Type</span>
+    </div>
+  </div>
+  <div id="wrapperDiv" class="inputWrapper">
+    <i class="fa fa-lg fa-filter" aria-hidden="true"></i>
+    <!-- <i class="fa fa-lg fa-search" (click)="searchCliked()"></i> -->
+    <input id="search" class="c-input" type="text" [(ngModel)]="filter"/>
+  </div>
+</div>
